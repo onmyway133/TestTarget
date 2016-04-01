@@ -104,6 +104,8 @@ github "Quick/Quick"
 
 - Go to Test target build phase
 - Drag built frameworks from `Carthage/Build`
+- In rare case, we need to drag frameworks that the Main target uses
+- In rare case, we need to drag the Main target framework
 
 ![](Screenshots/carthage_link_binaries.png)
 
