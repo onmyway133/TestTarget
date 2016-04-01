@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D697D1A11F08C8D9C650E27 /* Pods_TeaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09EFBDF4A8EAAB52C084F94 /* Pods_TeaApp.framework */; };
+		963C08E38B5C48B7781F4AA4 /* Pods_TeaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CBABE923AD003E4541D153 /* Pods_TeaAppTests.framework */; };
+		BAA86071154985535DBE0323 /* Pods_TeaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205312EB39E9BE32220EA3B1 /* Pods_TeaAppUITests.framework */; };
+		D221A3A51CAF222C002C6A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221A3A41CAF222C002C6A20 /* AppDelegate.swift */; };
+		D221A3A71CAF222C002C6A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221A3A61CAF222C002C6A20 /* ViewController.swift */; };
+		D221A3AA1CAF222C002C6A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D221A3A81CAF222C002C6A20 /* Main.storyboard */; };
+		D221A3AC1CAF222C002C6A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D221A3AB1CAF222C002C6A20 /* Assets.xcassets */; };
+		D221A3AF1CAF222C002C6A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D221A3AD1CAF222C002C6A20 /* LaunchScreen.storyboard */; };
+		D221A3BA1CAF222C002C6A20 /* TeaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221A3B91CAF222C002C6A20 /* TeaAppTests.swift */; };
+		D221A3C51CAF222C002C6A20 /* TeaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D221A3C41CAF222C002C6A20 /* TeaAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D221A3B61CAF222C002C6A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D221A3991CAF222C002C6A20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D221A3A01CAF222C002C6A20;
+			remoteInfo = TeaApp;
+		};
+		D221A3C11CAF222C002C6A20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D221A3991CAF222C002C6A20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D221A3A01CAF222C002C6A20;
+			remoteInfo = TeaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		205312EB39E9BE32220EA3B1 /* Pods_TeaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A613020728C452CCFF98755 /* Pods-TeaAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeaAppUITests/Pods-TeaAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8401BFC3D324FA2B07E28EEE /* Pods-TeaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeaAppTests/Pods-TeaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		92F9A09ED0596A6DDD85B1D4 /* Pods-TeaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeaApp/Pods-TeaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C09EFBDF4A8EAAB52C084F94 /* Pods_TeaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D221A3A11CAF222C002C6A20 /* TeaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D221A3A41CAF222C002C6A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D221A3A61CAF222C002C6A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D221A3A91CAF222C002C6A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D221A3AB1CAF222C002C6A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D221A3AE1CAF222C002C6A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D221A3B01CAF222C002C6A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D221A3B51CAF222C002C6A20 /* TeaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D221A3B91CAF222C002C6A20 /* TeaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaAppTests.swift; sourceTree = "<group>"; };
+		D221A3BB1CAF222C002C6A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D221A3C01CAF222C002C6A20 /* TeaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D221A3C41CAF222C002C6A20 /* TeaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaAppUITests.swift; sourceTree = "<group>"; };
+		D221A3C61CAF222C002C6A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28DB61541B2B48E6E0B9DDC /* Pods-TeaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeaAppTests/Pods-TeaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1CBABE923AD003E4541D153 /* Pods_TeaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F2CE934F596ECE430A7502 /* Pods-TeaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeaApp/Pods-TeaApp.release.xcconfig"; sourceTree = "<group>"; };
+		F66A723EE1A682B6CEEADE72 /* Pods-TeaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeaAppUITests/Pods-TeaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D221A39E1CAF222C002C6A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D697D1A11F08C8D9C650E27 /* Pods_TeaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D221A3B21CAF222C002C6A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963C08E38B5C48B7781F4AA4 /* Pods_TeaAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D221A3BD1CAF222C002C6A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA86071154985535DBE0323 /* Pods_TeaAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		086926A82084FC610925F809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C09EFBDF4A8EAAB52C084F94 /* Pods_TeaApp.framework */,
+				F1CBABE923AD003E4541D153 /* Pods_TeaAppTests.framework */,
+				205312EB39E9BE32220EA3B1 /* Pods_TeaAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DF28BCB5FFC8D42FA96AEBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92F9A09ED0596A6DDD85B1D4 /* Pods-TeaApp.debug.xcconfig */,
+				F3F2CE934F596ECE430A7502 /* Pods-TeaApp.release.xcconfig */,
+				E28DB61541B2B48E6E0B9DDC /* Pods-TeaAppTests.debug.xcconfig */,
+				8401BFC3D324FA2B07E28EEE /* Pods-TeaAppTests.release.xcconfig */,
+				F66A723EE1A682B6CEEADE72 /* Pods-TeaAppUITests.debug.xcconfig */,
+				4A613020728C452CCFF98755 /* Pods-TeaAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D221A3981CAF222C002C6A20 = {
+			isa = PBXGroup;
+			children = (
+				D221A3A31CAF222C002C6A20 /* TeaApp */,
+				D221A3B81CAF222C002C6A20 /* TeaAppTests */,
+				D221A3C31CAF222C002C6A20 /* TeaAppUITests */,
+				D221A3A21CAF222C002C6A20 /* Products */,
+				8DF28BCB5FFC8D42FA96AEBF /* Pods */,
+				086926A82084FC610925F809 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D221A3A21CAF222C002C6A20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D221A3A11CAF222C002C6A20 /* TeaApp.app */,
+				D221A3B51CAF222C002C6A20 /* TeaAppTests.xctest */,
+				D221A3C01CAF222C002C6A20 /* TeaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D221A3A31CAF222C002C6A20 /* TeaApp */ = {
+			isa = PBXGroup;
+			children = (
+				D221A3A41CAF222C002C6A20 /* AppDelegate.swift */,
+				D221A3A61CAF222C002C6A20 /* ViewController.swift */,
+				D221A3A81CAF222C002C6A20 /* Main.storyboard */,
+				D221A3AB1CAF222C002C6A20 /* Assets.xcassets */,
+				D221A3AD1CAF222C002C6A20 /* LaunchScreen.storyboard */,
+				D221A3B01CAF222C002C6A20 /* Info.plist */,
+			);
+			path = TeaApp;
+			sourceTree = "<group>";
+		};
+		D221A3B81CAF222C002C6A20 /* TeaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D221A3B91CAF222C002C6A20 /* TeaAppTests.swift */,
+				D221A3BB1CAF222C002C6A20 /* Info.plist */,
+			);
+			path = TeaAppTests;
+			sourceTree = "<group>";
+		};
+		D221A3C31CAF222C002C6A20 /* TeaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D221A3C41CAF222C002C6A20 /* TeaAppUITests.swift */,
+				D221A3C61CAF222C002C6A20 /* Info.plist */,
+			);
+			path = TeaAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D221A3A01CAF222C002C6A20 /* TeaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D221A3C91CAF222C002C6A20 /* Build configuration list for PBXNativeTarget "TeaApp" */;
+			buildPhases = (
+				7F395688B7FB42B4706D9955 /* 📦 Check Pods Manifest.lock */,
+				D221A39D1CAF222C002C6A20 /* Sources */,
+				D221A39E1CAF222C002C6A20 /* Frameworks */,
+				D221A39F1CAF222C002C6A20 /* Resources */,
+				96825C4E66851FE36F83A1E3 /* 📦 Embed Pods Frameworks */,
+				9126B717E6979AF7743FCF18 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeaApp;
+			productName = TeaApp;
+			productReference = D221A3A11CAF222C002C6A20 /* TeaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D221A3B41CAF222C002C6A20 /* TeaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D221A3CC1CAF222C002C6A20 /* Build configuration list for PBXNativeTarget "TeaAppTests" */;
+			buildPhases = (
+				36BB2E0688F0BB4BCBCC1BC3 /* 📦 Check Pods Manifest.lock */,
+				D221A3B11CAF222C002C6A20 /* Sources */,
+				D221A3B21CAF222C002C6A20 /* Frameworks */,
+				D221A3B31CAF222C002C6A20 /* Resources */,
+				887278C612420C708B4523B2 /* 📦 Embed Pods Frameworks */,
+				8DC958C29F24581FDCAD8C28 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D221A3B71CAF222C002C6A20 /* PBXTargetDependency */,
+			);
+			name = TeaAppTests;
+			productName = TeaAppTests;
+			productReference = D221A3B51CAF222C002C6A20 /* TeaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D221A3BF1CAF222C002C6A20 /* TeaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D221A3CF1CAF222C002C6A20 /* Build configuration list for PBXNativeTarget "TeaAppUITests" */;
+			buildPhases = (
+				909358D68E4D782101B19E04 /* 📦 Check Pods Manifest.lock */,
+				D221A3BC1CAF222C002C6A20 /* Sources */,
+				D221A3BD1CAF222C002C6A20 /* Frameworks */,
+				D221A3BE1CAF222C002C6A20 /* Resources */,
+				27E8B8B6468A83232BF10887 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D221A3C21CAF222C002C6A20 /* PBXTargetDependency */,
+			);
+			name = TeaAppUITests;
+			productName = TeaAppUITests;
+			productReference = D221A3C01CAF222C002C6A20 /* TeaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D221A3991CAF222C002C6A20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Fantageek;
+				TargetAttributes = {
+					D221A3A01CAF222C002C6A20 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D221A3B41CAF222C002C6A20 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D221A3A01CAF222C002C6A20;
+					};
+					D221A3BF1CAF222C002C6A20 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D221A3A01CAF222C002C6A20;
+					};
+				};
+			};
+			buildConfigurationList = D221A39C1CAF222C002C6A20 /* Build configuration list for PBXProject "TeaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D221A3981CAF222C002C6A20;
+			productRefGroup = D221A3A21CAF222C002C6A20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D221A3A01CAF222C002C6A20 /* TeaApp */,
+				D221A3B41CAF222C002C6A20 /* TeaAppTests */,
+				D221A3BF1CAF222C002C6A20 /* TeaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D221A39F1CAF222C002C6A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D221A3AF1CAF222C002C6A20 /* LaunchScreen.storyboard in Resources */,
+				D221A3AC1CAF222C002C6A20 /* Assets.xcassets in Resources */,
+				D221A3AA1CAF222C002C6A20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D221A3B31CAF222C002C6A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D221A3BE1CAF222C002C6A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27E8B8B6468A83232BF10887 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeaAppUITests/Pods-TeaAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36BB2E0688F0BB4BCBCC1BC3 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F395688B7FB42B4706D9955 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		887278C612420C708B4523B2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeaAppTests/Pods-TeaAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DC958C29F24581FDCAD8C28 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeaAppTests/Pods-TeaAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		909358D68E4D782101B19E04 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9126B717E6979AF7743FCF18 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeaApp/Pods-TeaApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96825C4E66851FE36F83A1E3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeaApp/Pods-TeaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D221A39D1CAF222C002C6A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D221A3A71CAF222C002C6A20 /* ViewController.swift in Sources */,
+				D221A3A51CAF222C002C6A20 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D221A3B11CAF222C002C6A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D221A3BA1CAF222C002C6A20 /* TeaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D221A3BC1CAF222C002C6A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D221A3C51CAF222C002C6A20 /* TeaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D221A3B71CAF222C002C6A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D221A3A01CAF222C002C6A20 /* TeaApp */;
+			targetProxy = D221A3B61CAF222C002C6A20 /* PBXContainerItemProxy */;
+		};
+		D221A3C21CAF222C002C6A20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D221A3A01CAF222C002C6A20 /* TeaApp */;
+			targetProxy = D221A3C11CAF222C002C6A20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D221A3A81CAF222C002C6A20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D221A3A91CAF222C002C6A20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D221A3AD1CAF222C002C6A20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D221A3AE1CAF222C002C6A20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D221A3C71CAF222C002C6A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D221A3C81CAF222C002C6A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D221A3CA1CAF222C002C6A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F9A09ED0596A6DDD85B1D4 /* Pods-TeaApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TeaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.TeaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D221A3CB1CAF222C002C6A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F2CE934F596ECE430A7502 /* Pods-TeaApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TeaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.TeaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D221A3CD1CAF222C002C6A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28DB61541B2B48E6E0B9DDC /* Pods-TeaAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TeaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.TeaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeaApp.app/TeaApp";
+			};
+			name = Debug;
+		};
+		D221A3CE1CAF222C002C6A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8401BFC3D324FA2B07E28EEE /* Pods-TeaAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TeaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.TeaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeaApp.app/TeaApp";
+			};
+			name = Release;
+		};
+		D221A3D01CAF222C002C6A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66A723EE1A682B6CEEADE72 /* Pods-TeaAppUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TeaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.TeaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TeaApp;
+			};
+			name = Debug;
+		};
+		D221A3D11CAF222C002C6A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A613020728C452CCFF98755 /* Pods-TeaAppUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TeaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.TeaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TeaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D221A39C1CAF222C002C6A20 /* Build configuration list for PBXProject "TeaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D221A3C71CAF222C002C6A20 /* Debug */,
+				D221A3C81CAF222C002C6A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D221A3C91CAF222C002C6A20 /* Build configuration list for PBXNativeTarget "TeaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D221A3CA1CAF222C002C6A20 /* Debug */,
+				D221A3CB1CAF222C002C6A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D221A3CC1CAF222C002C6A20 /* Build configuration list for PBXNativeTarget "TeaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D221A3CD1CAF222C002C6A20 /* Debug */,
+				D221A3CE1CAF222C002C6A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D221A3CF1CAF222C002C6A20 /* Build configuration list for PBXNativeTarget "TeaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D221A3D01CAF222C002C6A20 /* Debug */,
+				D221A3D11CAF222C002C6A20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D221A3991CAF222C002C6A20 /* Project object */;
+}

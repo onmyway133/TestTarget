@@ -1,0 +1,6 @@
+framework module Sugar {
+  umbrella header "Sugar-umbrella.h"
+
+  export *
+  module * { export * }
+}

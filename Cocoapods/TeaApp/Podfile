@@ -1,0 +1,26 @@
+platform :ios, '8.0'
+use_frameworks!
+
+def app_pods
+	pod 'Sugar', '~> 1.0'
+end
+
+def test_pods
+	pod 'Nimble', '~> 3.2'
+	pod 'Quick', '~> 0.9'
+end
+
+target 'TeaApp' do
+	app_pods
+end
+
+target 'TeaAppTests' do
+	app_pods
+	test_pods
+end
+
+target 'TeaAppUITests' do
+	app_pods
+	test_pods
+end
+
