@@ -1,48 +1,152 @@
-# GithubSwift
+# TestTarget
+Notes on configuring test targets
 
-[![CI Status](http://img.shields.io/travis/onmyway133/GithubSwift.svg?style=flat)](https://travis-ci.org/onmyway133/GithubSwift)
-[![Version](https://img.shields.io/cocoapods/v/GithubSwift.svg?style=flat)](http://cocoadocs.org/docsets/GithubSwift)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/GithubSwift.svg?style=flat)](http://cocoadocs.org/docsets/GithubSwift)
-[![Platform](https://img.shields.io/cocoapods/p/GithubSwift.svg?style=flat)](http://cocoadocs.org/docsets/GithubSwift)
+#### This applies to
 
-## Description
+- Main targets
+  - App
+  - Framework
+- Test targets
+  - Unit tests
+  - UI tests
 
-Github API client in Swift, inspired by [octokit.objc](https://github.com/octokit/octokit.objc), using RxSwift
+#### Examples
 
-## Usage
+Dependencies used
+
+- Main target: [Sugar](http://github.com/hyperoslo/Sugar)
+- Test target: [Nimble](https://github.com/Quick/Nimble), [Quick](https://github.com/Quick/Quick)
+
+Examples
+
+- Cocoapods
+- Carthage
+
+#### Notes
+
+- Make sure test target can link to all the frameworks it needs. This includes frameworks that Test targets use, and possibly frameworks that Main target uses !
+- Remember to "Clean Build Folder" and "Clear Derived Data" so that you're sure it works. Sometimes Xcode caches.
+
+### Errors
+
+Errors occur mostly due to linker error
+
+- Test target X encountered an error (Early unexpected exit, operation never finished bootstrapping - no restart will be attempted
+- Framework not found
+
+## Cocoapods
+
+#### 1. Pod
+
+Test targets need to include pods that Main target uses !
+
+or we'll get "Framework not found"
+
+```ruby
+def app_pods
+	pod 'Sugar', '~> 1.0'
+end
+
+def test_pods
+	pod 'Nimble', '~> 3.2'
+	pod 'Quick', '~> 0.9'
+end
+
+target 'TeaApp' do
+	app_pods
+end
+
+target 'TeaAppTests' do
+	app_pods
+	test_pods
+end
+
+target 'TeaAppUITests' do
+	app_pods
+	test_pods
+end
+
+```
+
+#### 2. Link Binaries with Library
+
+Cocoapods builds a framework that contains all the frameworks the Test targets need, and configure it for us
+
+![](Screenshots/cocoapods_link_binaries.png)
+
+#### 3. Runpath Search Paths
+
+- Go to Test target Build Settings
+- Add `$(FRAMEWORK_SEARCH_PATHS)`
+
+![](Screenshots/cocoapods_runpath_search_paths.png)
+
+## Carthage
+
+#### 1. Cartfile
+
+We usually have
+
+- Cartfile for Main target
 
 ```swift
-<API>
+github "hyperoslo/Sugar" ~> 1.0
 ```
+
+- Cartfile.private for Test target
+
+```swift
+github "Quick/Nimble"
+github "Quick/Quick"
+```
+
+#### 2. Link Binaries with Libraries
+
+- Go to Test target build phase
+- Drag built frameworks from `Carthage/Build`
+
+![](Screenshots/carthage_link_binaries.png)
+
+#### 3. Framework Search Paths
+
+Configure correct path
+
+- Go to Test target Built Settings
+- Configure Framework Search Paths
+
+![](Screenshots/carthage_framework_search_paths.png)
+
+#### 4. Runpath Search Paths
+
+- Go to Test target Build Settings
+- Add `$(FRAMEWORK_SEARCH_PATHS)`
+
+![](Screenshots/cocoapods_runpath_search_paths.png)
+
+#### 5. Copy Files (maybe)
+
+From [Adding frameworks to unit tests or a framework](https://github.com/Carthage/Carthage/blob/0.11/README.md#adding-frameworks-to-unit-tests-or-a-framework)
+
+> In rare cases, you may want to also copy each dependency into the build product (e.g., to embed dependencies within the outer framework, or make sure dependencies are present in a test bundle). To do this, create a new “Copy Files” build phase with the “Frameworks” destination, then add the framework reference there as well.
+
+![](Screenshots/carthage_copy_files.png)
+
+## Runpath Search Paths and Install name
+
+Question
+
+- Why preconfigured run path "@executable_path/Frameworks" and "@loader_path/Frameworks" not work?
+- Why configuring runpath to "$(FRAMEWORK_SEARCH_PATHS)" works ?
+- Why framework has install name "@rpath/Sugar.framework/Sugar" ?
+
+Reference
+
+- [Run-Path Dependent Libraries](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/RunpathDependentLibraries.html)
+- [Linking and Install Names](https://www.mikeash.com/pyblog/friday-qa-2009-11-06-linking-and-install-names.html)
 
 ## Author
 
 Khoa Pham, onmyway133@gmail.com
-
-## Installation
-
-**GithubSwift** is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'GithubSwift'
-```
-
-**GithubSwift** is also available through [Carthage](https://github.com/Carthage/Carthage).
-To install just write into your Cartfile:
-
-```ruby
-github "onmyway133/GithubSwift"
-```
-
-## Author
-
-Khoa Pham, onmyway133@gmail.com
-
-## Contributing
-
-We would love you to contribute to **GithubSwift**, check the [CONTRIBUTING](https://github.com/onmyway133/GithubSwift/blob/master/CONTRIBUTING.md) file for more info.
 
 ## License
 
