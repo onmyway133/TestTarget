@@ -152,4 +152,4 @@ Khoa Pham, onmyway133@gmail.com
 
 ## License
 
-**GithubSwift** is available under the MIT license. See the [LICENSE](https://github.com/onmyway133/GithubSwift/blob/master/LICENSE.md) file for more info.
+**TestTarget** is available under the MIT license. See the [LICENSE](https://github.com/onmyway133/TestTarget/blob/master/LICENSE.md) file for more info.
